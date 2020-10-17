@@ -29,6 +29,6 @@
       "./src/mikro-orm.config.ts",
       "./dist/mikro-orm.config.js"
     ]
-  }
+  },
   "description": ""
 }

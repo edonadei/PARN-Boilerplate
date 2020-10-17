@@ -9,6 +9,7 @@ export default {
     dbName: "lireddit",
     user: "postgres",
     password: "qwerty",
+    type: "postgresql",
     path: path.join(__dirname, './migrations'), 
     pattern: /^[\w-]+\d+\.[tj]s$/, 
     debug: !__prod__
