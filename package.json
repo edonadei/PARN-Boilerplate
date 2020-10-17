@@ -23,5 +23,12 @@
     "typescript": "^4.0.3"
   },
   "devDependencies": {},
+  "mikro-orm":{
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
   "description": ""
 }

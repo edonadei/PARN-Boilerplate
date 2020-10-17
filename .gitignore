@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Tailwind CSS file
 /src/styles/tailwind.css
+
+# Typescript folders
+/dist
