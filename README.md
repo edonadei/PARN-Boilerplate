@@ -4,6 +4,7 @@ My boilerplate to start full stack GraphQL products
 ## Getting started
 - Just `yarn watch` & `yarn dev`to develop
 - Go to `localhost:4000/graphql` to play around the endpoints
+- You can generate your migration by doing `yarn create:migration`
 
 ## Stack
 | PostgresQL | Typescript | React | Express |
