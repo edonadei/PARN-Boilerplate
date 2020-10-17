@@ -20,7 +20,6 @@ class UsernamePasswordInput {
 @ObjectType()
 class FieldError {
   @Field() field: string;
-
   @Field() message: string;
 }
 
@@ -29,7 +28,7 @@ class UserResponse {
   @Field(() => [FieldError], { nullable: true })
   errors?: FieldError[];
 
-  @Field(() => [User], { nullable: true })
+  @Field(() => User, { nullable: true })
   user?: User;
 }
 
@@ -40,7 +39,7 @@ export class UserResolver {
     @Arg("options") options: UsernamePasswordInput,
     @Ctx() { em }: MyContext
   ) {
-    const hashedPassword = argon2.hash(options.password);
+    const hashedPassword = await argon2.hash(options.password);
     const user = em.create(User, {
       username: options.username,
       password: hashedPassword
@@ -65,7 +64,7 @@ export class UserResolver {
         ]
       };
     }
-    const valid = argon2.verify(user.password, options.password);
+    const valid = await argon2.verify(user.password, options.password);
     if (!valid) {
       return {
         errors: [
@@ -76,6 +75,7 @@ export class UserResolver {
         ]
       };
     }
+
     return { user };
   }
 }
