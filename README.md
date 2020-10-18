@@ -1,5 +1,5 @@
 ﻿# PERN (PostgresQL, Express, React, Node) Boilerplate
-My boilerplate to start full stack GraphQL products 
+My boilerplate to start full stack GraphQL products. It aims to getting started on a application that can handle authentication, CRUD operations, with a frond end. 
 
 ## Getting started
 - Start a redis server with `redis-server`
