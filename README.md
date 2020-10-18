@@ -20,3 +20,9 @@ My boilerplate to start full stack GraphQL products
 | <img src="https://avatars0.githubusercontent.com/u/54766168?s=280&v=4" alt="TypeORM" width="148" height="148"> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1024px-GraphQL_Logo.svg.png" alt="GraphQL" width="148" height="148"> | <img src="https://seeklogo.com/images/A/apollo-logo-DC7DD3C444-seeklogo.com.png" alt="Apollo" width="148" height="148"> | <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt="Node Js" width="148" height="148"> |
 |Typescript ORM|API Query language|GraphQL Server|Javascript Runtime|
 | <a href="https://mikro-orm.io/docs/installation/">Getting started</a> | <a href="https://graphql.org/graphql-js/">Getting started</a> | <a href="https://www.apollographql.com/docs/apollo-server/getting-started/">Getting started</a> | <a href="https://nodejs.org/en/docs/guides/getting-started-guide/">Getting started</a> |
+
+| Redis |
+|--|
+| <img src="https://cdn4.iconfinder.com/data/icons/redis-2/1451/Untitled-2-512.png" alt="Redis" width="148" height="148"> |
+|In memory DB|
+| <a href="https://redis.io/topics/quickstart">Getting started</a> |
