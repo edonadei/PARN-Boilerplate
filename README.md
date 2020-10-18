@@ -1,12 +1,14 @@
 ﻿# PERN (PostgresQL, Express, React, Node) Boilerplate
 My boilerplate to start full stack GraphQL products. It aims to getting started on a application that can handle authentication, CRUD operations, with a frond end. 
 
-## Getting started
+## Prerequisites
 - Start a redis server with `redis-server`
-- Start pogstgresQL instance
+- Start a pogstgresQL instance
+
+## Getting started
 - `yarn watch` & `yarn dev`to develop
 - Go to `localhost:4000/graphql` to play around the endpoints
-- You can generate your migration by doing `yarn create:migration`
+- After edited some entities, you can generate a new migration by doing `yarn create:migration`
 
 ## Stack
 | PostgresQL | Typescript | React | Express |
