@@ -48,7 +48,7 @@ const main = async () => {
       validate: false
     }),
     // We need to get the orm.en object in our resolvers
-    context: ({ req, res }): MyContext => ({ em: orm.em, req, res })
+    context: ({ req, res }) => ({ em: orm.em, req, res })
   });
 
   apolloServer.applyMiddleware({ app });

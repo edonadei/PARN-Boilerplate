@@ -92,7 +92,7 @@ export class UserResolver {
       }
     }
 
-    // We log the user after being registed
+    // We log the user after being registered
     req.session.userId = user.id;
 
     return { user };
