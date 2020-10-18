@@ -71,7 +71,6 @@ export class UserResolver {
         ]
       };
     }
-
     const hashedPassword = await argon2.hash(options.password);
     const user = em.create(User, {
       username: options.username,
@@ -86,6 +85,15 @@ export class UserResolver {
             {
               field: "username",
               message: "This user already exists"
+            }
+          ]
+        };
+      } else {
+        return {
+          errors: [
+            {
+              field: "unknown",
+              message: err
             }
           ]
         };
