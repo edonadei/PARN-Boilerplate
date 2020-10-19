@@ -79,6 +79,7 @@ export class UserResolver {
     try {
       await em.persistAndFlush(user);
     } catch (err) {
+      em.clear();
       if (err.code === "23505") {
         return {
           errors: [
